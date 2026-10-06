@@ -91,9 +91,13 @@ a { color: inherit; }
 .nav-cta:hover { background: var(--accent-soft); transform: translateY(-1px); }
 
 .hero {
-  background: var(--bg);
+  background-image: url('https://images.unsplash.com/photo-1536599018102-9f803c140fc1?w=1600');
+  background-color: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
   color: var(--text-light);
-  padding: 6rem 1.5rem 5rem;
+  padding: 8rem 1.5rem 6rem;
   position: relative;
   overflow: hidden;
 }
@@ -236,6 +240,17 @@ a { color: inherit; }
   grid-template-columns: 2fr 1fr;
   gap: 3rem;
   align-items: start;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
+  display: block;
 }
 
 .about-main p {
